@@ -112,11 +112,16 @@ public class D1Java {
             System.out.println("logins ir pareizs");
         }
         
+        //2.variants
+        //if(logins.length() < 3 || logins.length() > 12)
+        String parole = "abc111";
         System.out.print("Ievadiet paroli: ");
-        String parole = sc.nextLine();
-        int b = parole.length();
+        String paroleInput = sc.nextLine();
+        int b = paroleInput.length();
         if(b < 5 || b > 10){
+            if(parole.equals(b)){
             System.out.println("parole ir nepareiza");
+            }
         } else {
             System.out.println("parole ir pareiza");
         }
@@ -129,9 +134,10 @@ public class D1Java {
 //        String parole = sc.nextLine();
 //        int b = parole.length();
 //
-//        if(a < 3 || a > 12 && b < 5 || b > 10){
+//        if(a < 3 || a > 12 || b < 5 || b > 10){
 //            System.out.println("logins un/vai parole ir nepareiza");
 //        } else {
 //            System.out.println("logins un parole ir pareiza");
+//        }
     }
 }
